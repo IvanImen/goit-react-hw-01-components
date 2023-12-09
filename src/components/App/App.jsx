@@ -2,7 +2,7 @@ import {
 Profile,
 } from 'components';
 
-import article from 'data/user.json';
+import user from 'data/user.json';
 
 export const App = () => {
   return (
@@ -11,7 +11,7 @@ export const App = () => {
         <Heading marginBottom="50px" textAlign="center">
           User Profile
         </Heading>
-        <BlogCard article={article} />
+        <Profile user={user} />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
