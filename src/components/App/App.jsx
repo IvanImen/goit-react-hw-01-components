@@ -1,11 +1,6 @@
-import {
-  Profile,
-  Container,
-  Heading,
-  Section
-} from 'components';
+import { Profile, Container, Heading, Section } from 'components';
 
-import user from 'data/user.json';
+import userData from 'data/user.json';
 
 export const App = () => {
   return (
@@ -14,7 +9,7 @@ export const App = () => {
         <Heading marginBottom="50px" textAlign="center">
           User Profile
         </Heading>
-        <Profile user={user} />
+        <Profile user={userData} />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2

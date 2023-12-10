@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Card = styled.div`
+  padding: ${props => props.theme.spacing(4)};
   display: flex;
   flex-direction: column;
 
@@ -65,7 +66,7 @@ export const CardFooter = styled.div`
 
 export const UserBox = styled.div`
   display: flex;
-  gap: ${props => props.theme.spacing(2)}; ;
+  gap: ${props => props.theme.spacing(2)};
 `;
 
 export const Avatar = styled.img`
