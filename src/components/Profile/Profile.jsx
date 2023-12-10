@@ -1,47 +1,44 @@
-import {
-  Card,
-  CardBody,
-  CardHeader,
-  CardText,
-  CardTitle,
-  CardFooter,
-  Tag,
-  Avatar,
-  UserBox,
-  UserInfo,
-  UserName,
-  Date,
-} from './Profile.styled';
+// import {
+//   Card,
+//   CardPoster,
+//   CardBody,
+//   CardHeader,
+//   CardText,
+//   CardTitle,
+//   CardFooter,
+//   Tag,
+//   Avatar,
+//   UserBox,
+//   UserInfo,
+//   UserName,
+//   Date,
+// } from './Profile.styled';
 
-import { dateNow } from 'helpers/formatDistance';
-
-
-
-export const Profile = ({user:{name,tag, location, avatar, stats}}) => {
-  return <div class="profile">
-  <div class="description">
+export const Profile = ({user:{name, tag, location, avatar, followers, views, likes}}) => {
+  return <div className="profile">
+  <div className="description">
     <img
-      src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+      src={avatar}
       alt="User avatar"
-      class="avatar"
+      className="avatar"
     />
-    <p class="name">Petra Marica</p>
-    <p class="tag">@pmarica</p>
-    <p class="location">Salvador, Brasil</p>
+    <p className="name">{name}</p>
+    <p className="tag">{tag}</p>
+    <p className="location">{location}</p>
   </div>
 
-  <ul class="stats">
+  <ul className="stats">
     <li>
-      <span class="label">Followers</span>
-      <span class="quantity">1000</span>
+      <span className="label">Followers</span>
+      <span className="quantity">{followers}</span>
     </li>
     <li>
-      <span class="label">Views</span>
-      <span class="quantity">2000</span>
+      <span className="label">Views</span>
+      <span className="quantity">{views}</span>
     </li>
     <li>
-      <span class="label">Likes</span>
-      <span class="quantity">3000</span>
+      <span className="label">Likes</span>
+      <span className="quantity">{likes}</span>
     </li>
   </ul>
 </div>

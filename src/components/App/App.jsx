@@ -1,5 +1,8 @@
 import {
-Profile,
+  Profile,
+  Container,
+  Heading,
+  Section
 } from 'components';
 
 import user from 'data/user.json';
@@ -16,17 +19,17 @@ export const App = () => {
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
         </Heading>
-        <Statistics statsData={statsData} />
+        {/* <Statistics statsData={statsData} /> */}
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 3
         </Heading>
-        <ForbesList forbesList={forbesList} />
+        {/* <ForbesList forbesList={forbesList} /> */}
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 4
         </Heading>
-        <CryptoHistory transactions={transactions} />
+        {/* <CryptoHistory transactions={transactions} /> */}
       </Container>
     </Section>
   );
