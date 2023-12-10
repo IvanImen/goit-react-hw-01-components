@@ -14,32 +14,42 @@
 //   Date,
 // } from './Profile.styled';
 
+import {
+  Card,
+  CardBody,
+  CardPoster,
+  CardText,
+  Tag,
+  UserName
+
+} from './Profile.styled';
+
 export const Profile = ({user:{name, tag, location, avatar, followers, views, likes}}) => {
-  return <div className="profile">
-  <div className="description">
-    <img
+  return <Card className="profile">
+  <CardBody UserInfo UserInfoclassName="description">
+    <CardPoster
       src={avatar}
       alt="User avatar"
       className="avatar"
     />
-    <p className="name">{name}</p>
-    <p className="tag">{tag}</p>
-    <p className="location">{location}</p>
-  </div>
+    <UserName className="name">{name}</UserName>
+    <CardText className="tag">{tag}</CardText>
+    <CardText className="location">{location}</CardText>
+  </CardBody>
 
   <ul className="stats">
     <li>
-      <span className="label">Followers</span>
-      <span className="quantity">{followers}</span>
+      <Tag className="label">Followers</Tag>
+      <Tag className="quantity">{followers}</Tag>
     </li>
     <li>
-      <span className="label">Views</span>
-      <span className="quantity">{views}</span>
+      <Tag className="label">Views</Tag>
+      <Tag className="quantity">{views}</Tag>
     </li>
     <li>
-      <span className="label">Likes</span>
-      <span className="quantity">{likes}</span>
+      <Tag className="label">Likes</Tag>
+      <Tag className="quantity">{likes}</Tag>
     </li>
   </ul>
-</div>
+</Card>
 };

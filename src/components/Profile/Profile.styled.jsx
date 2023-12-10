@@ -24,6 +24,8 @@ export const CardPoster = styled.img`
 
 export const CardBody = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: ${props => props.theme.spacing(2)};
 
