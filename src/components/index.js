@@ -5,3 +5,7 @@ export * from 'components/Container/Container.styled.jsx';
 export * from 'components/Heading/Heading.styled.jsx';
 export * from 'components/ProfileStats/ProfileStats.jsx';
 export * from 'components/ProfileStatsItem/ProfileStatsItem.jsx';
+export * from 'components/StatisticItem/StatisticItem.jsx';
+export * from 'components/Statistics/Statistics.jsx';
+export * from 'components/FriendsList/FriendsList.jsx';
+export * from 'components/FriendsListItem/FriendsListItem.jsx';
