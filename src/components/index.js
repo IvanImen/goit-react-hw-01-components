@@ -9,3 +9,4 @@ export * from 'components/StatisticItem/StatisticItem.jsx';
 export * from 'components/Statistics/Statistics.jsx';
 export * from 'components/FriendsList/FriendsList.jsx';
 export * from 'components/FriendsListItem/FriendsListItem.jsx';
+export * from 'components/TransactionHistory/TransactionHistory.jsx';

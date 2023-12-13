@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const ForbesItem = styled.li`
+export const FriendsItem = styled.li`
   display: grid;
   grid-template-columns: 1fr 2fr 5fr;
   align-items: center;

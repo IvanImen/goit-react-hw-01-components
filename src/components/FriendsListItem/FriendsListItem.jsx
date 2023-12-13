@@ -1,5 +1,5 @@
 import {
-  ForbesItem,
+  FriendsItem,
   Avatar,
   Name,
   IsOnlineStatus,
@@ -9,7 +9,7 @@ import {
 
 export const FriendsListItem = ({ isOnline, name, avatar }) => {
   return (
-    <ForbesItem>
+    <FriendsItem>
       {isOnline ? (
         <IsOnlineStatus style={{ backgroundColor: 'green' }} />
       ) : (
@@ -17,6 +17,6 @@ export const FriendsListItem = ({ isOnline, name, avatar }) => {
       )}
       <Avatar src={avatar} alt={name} />
       <Name>{name}</Name>
-    </ForbesItem>
+    </FriendsItem>
   );
 };

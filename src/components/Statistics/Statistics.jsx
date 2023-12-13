@@ -1,9 +1,9 @@
 import { StatisticItem } from 'components';
-import { StatisticsList, StatisticTitle } from './Statistics.styled';
+import { StatisticsList, StatisticTitle, Card } from './Statistics.styled';
 
 export const Statistics = ({ title, statsData }) => {
   return (
-    <div>
+    <Card>
       {title && <StatisticTitle>{title}</StatisticTitle>}
 
       <StatisticsList>
@@ -11,6 +11,6 @@ export const Statistics = ({ title, statsData }) => {
           <StatisticItem key={id} label={label} percentage={percentage} />
         ))}
       </StatisticsList>
-    </div>
+    </Card>
   );
 };

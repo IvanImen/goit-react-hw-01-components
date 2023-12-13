@@ -1,10 +1,10 @@
 import { FriendsListItem } from 'components';
-import { LeaderBoard, LeaderBoardProfiles } from './FriendsList.styled';
+import { FriendsBoard, FriendsBoardProfiles } from './FriendsList.styled';
 
 export const FriendsList = ({ friendsList }) => {
   return (
-    <LeaderBoard>
-      <LeaderBoardProfiles>
+    <FriendsBoard>
+      <FriendsBoardProfiles>
         {friendsList.map(({ id, avatar, name, isOnline }) => (
           <FriendsListItem
             key={id}
@@ -13,7 +13,7 @@ export const FriendsList = ({ friendsList }) => {
             name={name}
           />
         ))}
-      </LeaderBoardProfiles>
-    </LeaderBoard>
+      </FriendsBoardProfiles>
+    </FriendsBoard>
   );
 };
