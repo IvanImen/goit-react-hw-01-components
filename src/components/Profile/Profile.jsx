@@ -3,7 +3,6 @@ import {
   CardBody,
   CardPoster,
   CardText,
-  Tag,
   UserName,
 } from './Profile.styled';
 
